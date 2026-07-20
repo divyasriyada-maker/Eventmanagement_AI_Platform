@@ -1,0 +1,1225 @@
+ {% extends "base.html" %}
+
+{% block title %}About EventOps AI{% endblock %}
+
+{% block extra_css %}
+<style>
+
+    body {
+        background: #f8f9fc;
+    }
+
+    /* ==========================================
+       INTRODUCTION SECTION
+    ========================================== */
+
+    .intro-section {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 60px;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+        margin-bottom: 70px;
+    }
+
+    .intro-badge {
+        display: inline-block;
+        background: rgba(13,110,253,0.1);
+        color: #0d6efd;
+        padding: 8px 18px;
+        border-radius: 30px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .intro-title {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #212529;
+        margin-bottom: 20px;
+    }
+
+    .intro-text {
+        font-size: 1.15rem;
+        line-height: 1.9;
+        color: #6c757d;
+    }
+
+    .intro-image {
+        font-size: 12rem;
+        background: linear-gradient(135deg,#0d6efd,#6610f2,#d63384);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* ==========================================
+       SECTION TITLE
+    ========================================== */
+
+    .section-title {
+
+        font-size: 2.3rem;
+
+        font-weight: 700;
+
+        color: #0d6efd;
+
+        margin-bottom: 15px;
+    }
+
+    .section-subtitle {
+
+        color: #6c757d;
+
+        max-width: 750px;
+
+        margin: auto;
+
+        margin-bottom: 50px;
+
+        line-height: 1.8;
+    }
+
+    /* ==========================================
+       PLATFORM CARDS
+    ========================================== */
+
+    .platform-card {
+
+        border: none;
+
+        border-radius: 20px;
+
+        padding: 35px;
+
+        text-align: center;
+
+        background: white;
+
+        box-shadow: 0 12px 35px rgba(0,0,0,.08);
+
+        transition: all .35s ease;
+
+        height: 100%;
+    }
+
+    .platform-card:hover {
+
+        transform: translateY(-10px);
+
+        box-shadow: 0 18px 45px rgba(0,0,0,.15);
+    }
+
+    .platform-icon {
+
+        width: 90px;
+
+        height: 90px;
+
+        border-radius: 50%;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        margin: auto;
+
+        margin-bottom: 25px;
+
+        font-size: 2.5rem;
+
+        color: white;
+
+        background: linear-gradient(135deg,#0d6efd,#6610f2);
+    }
+
+    .platform-card h4 {
+
+        font-weight: 700;
+
+        margin-bottom: 18px;
+    }
+
+    .platform-card p {
+
+        color: #6c757d;
+
+        line-height: 1.8;
+    }
+
+    @media (max-width:768px){
+
+        .intro-section{
+
+            padding:35px;
+        }
+
+        .intro-title{
+
+            font-size:2.2rem;
+        }
+
+        .intro-image{
+
+            display:none;
+        }
+
+    }
+
+</style>
+{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <!-- ==========================================
+         INTRODUCTION
+    ========================================== -->
+
+    <section class="intro-section">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-7">
+
+                <span class="intro-badge">
+
+                    <i class="bi bi-stars me-2"></i>
+
+                    Intelligent Event Platform
+
+                </span>
+
+                <h1 class="intro-title">
+
+                    About EventOps AI
+
+                </h1>
+
+                <p class="intro-text">
+
+                    EventOps AI is a next-generation event management platform
+                    that leverages multiple intelligent AI agents to automate
+                    event planning and operations. From attendee registrations
+                    and venue management to speaker coordination, sponsorship
+                    tracking, incident monitoring and business intelligence,
+                    every component works together to create a seamless,
+                    data-driven event experience.
+
+                </p>
+
+            </div>
+
+            <div class="col-lg-5 text-center">
+
+                <i class="bi bi-cpu-fill intro-image"></i>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         PLATFORM OVERVIEW
+    ========================================== -->
+
+    <section>
+
+        <div class="text-center">
+
+            <h2 class="section-title">
+
+                Platform Overview
+
+            </h2>
+
+            <p class="section-subtitle">
+
+                EventOps AI combines intelligent automation, real-time
+                monitoring and collaborative AI agents into one
+                integrated event management platform.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+
+                <div class="platform-card">
+
+                    <div class="platform-icon">
+
+                        <i class="bi bi-robot"></i>
+
+                    </div>
+
+                    <h4>
+
+                        AI Automation
+
+                    </h4>
+
+                    <p>
+
+                        Specialized AI agents automate repetitive
+                        operational tasks and streamline workflows
+                        throughout the event lifecycle.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="platform-card">
+
+                    <div class="platform-icon">
+
+                        <i class="bi bi-graph-up-arrow"></i>
+
+                    </div>
+
+                    <h4>
+
+                        Real-Time Analytics
+
+                    </h4>
+
+                    <p>
+
+                        Monitor registrations, venues, speakers,
+                        sponsorships and incidents using live
+                        dashboards and operational insights.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="platform-card">
+
+                    <div class="platform-icon">
+
+                        <i class="bi bi-shield-check"></i>
+
+                    </div>
+
+                    <h4>
+
+                        Secure Platform
+
+                    </h4>
+
+                    <p>
+
+                        Role-based authentication and secure
+                        database management ensure reliable
+                        and protected event operations.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!-- ==========================================
+         HOW EVENTOPS AI WORKS
+    ========================================== -->
+
+    <section class="mt-5">
+
+        <div class="text-center">
+
+            <h2 class="section-title">
+                How EventOps AI Works
+            </h2>
+
+            <p class="section-subtitle">
+
+                EventOps AI uses specialized AI agents that collaborate
+                throughout the event lifecycle. Each agent is responsible
+                for a specific operational area while continuously sharing
+                information with the Intelligence Agent to provide
+                real-time insights and analytics.
+
+            </p>
+
+        </div>
+
+        <div class="row justify-content-center g-4">
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+                <div class="platform-card">
+
+                    <div class="platform-icon">
+
+                        <i class="bi bi-person-check-fill"></i>
+
+                    </div>
+
+                    <h6 class="fw-bold">
+
+                        Registration
+
+                    </h6>
+
+                    <small class="text-muted">
+
+                        Attendee onboarding
+
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+                <div class="platform-card">
+
+                    <div class="platform-icon">
+
+                        <i class="bi bi-building-fill"></i>
+
+                    </div>
+
+                    <h6 class="fw-bold">
+
+                        Venue
+
+                    </h6>
+
+                    <small class="text-muted">
+
+                        Resource allocation
+
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+                <div class="platform-card">
+
+                    <div class="platform-icon">
+
+                        <i class="bi bi-mic-fill"></i>
+
+                    </div>
+
+                    <h6 class="fw-bold">
+
+                        Speaker
+
+                    </h6>
+
+                    <small class="text-muted">
+
+                        Session scheduling
+
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+                <div class="platform-card">
+
+                    <div class="platform-icon">
+
+                        <i class="bi bi-trophy-fill"></i>
+
+                    </div>
+
+                    <h6 class="fw-bold">
+
+                        Sponsor
+
+                    </h6>
+
+                    <small class="text-muted">
+
+                        Partnership management
+
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+                <div class="platform-card">
+
+                    <div class="platform-icon">
+
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+
+                    </div>
+
+                    <h6 class="fw-bold">
+
+                        Incident
+
+                    </h6>
+
+                    <small class="text-muted">
+
+                        Issue monitoring
+
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="text-center my-5">
+
+            <i class="bi bi-arrow-down-circle-fill display-5 text-primary"></i>
+
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-5">
+
+                <div class="platform-card text-center">
+
+                    <div class="platform-icon">
+
+                        <i class="bi bi-cpu-fill"></i>
+
+                    </div>
+
+                    <h3 class="fw-bold">
+
+                        Intelligence Agent
+
+                    </h3>
+
+                    <p class="mt-3 text-muted">
+
+                        Collects information from all operational agents,
+                        analyzes event performance, generates insights,
+                        identifies trends and provides administrators
+                        with real-time dashboards and decision support.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         LIVE PLATFORM OVERVIEW
+    ========================================== -->
+
+    <section class="mt-5">
+
+        <div class="text-center">
+
+            <h2 class="section-title">
+
+                Live Platform Overview
+
+            </h2>
+
+            <p class="section-subtitle">
+
+                The following statistics are retrieved dynamically
+                from the EventOps AI database.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="platform-card">
+
+                    <i class="bi bi-calendar-event display-4 text-primary"></i>
+
+                    <h2 class="mt-3">
+
+                        {{ event_count }}
+
+                    </h2>
+
+                    <p class="mb-0">
+
+                        Events
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="platform-card">
+
+                    <i class="bi bi-people-fill display-4 text-success"></i>
+
+                    <h2 class="mt-3">
+
+                        {{ registration_count }}
+
+                    </h2>
+
+                    <p class="mb-0">
+
+                        Registrations
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="platform-card">
+
+                    <i class="bi bi-building display-4 text-warning"></i>
+
+                    <h2 class="mt-3">
+
+                        {{ venue_count }}
+
+                    </h2>
+
+                    <p class="mb-0">
+
+                        Venues
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="platform-card">
+
+                    <i class="bi bi-mic-fill display-4 text-danger"></i>
+
+                    <h2 class="mt-3">
+
+                        {{ speaker_count }}
+
+                    </h2>
+
+                    <p class="mb-0">
+
+                        Speakers
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="platform-card">
+
+                    <i class="bi bi-trophy-fill display-4" style="color:#7952b3;"></i>
+
+                    <h2 class="mt-3">
+
+                        {{ sponsorship_count }}
+
+                    </h2>
+
+                    <p class="mb-0">
+
+                        Sponsorships
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!-- ==========================================
+         WHY EVENTOPS AI?
+    ========================================== -->
+
+    <section class="mt-5">
+
+        <div class="text-center">
+
+            <h2 class="section-title">
+                Why EventOps AI?
+            </h2>
+
+            <p class="section-subtitle">
+
+                EventOps AI transforms traditional event management into an
+                intelligent, automated ecosystem that improves efficiency,
+                decision-making and user experience.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="platform-card">
+
+                    <div class="platform-icon">
+
+                        <i class="bi bi-lightning-charge-fill"></i>
+
+                    </div>
+
+                    <h5 class="fw-bold">
+
+                        Faster Operations
+
+                    </h5>
+
+                    <p>
+
+                        Automate repetitive administrative tasks and
+                        reduce manual workload throughout the event.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="platform-card">
+
+                    <div class="platform-icon">
+
+                        <i class="bi bi-bar-chart-fill"></i>
+
+                    </div>
+
+                    <h5 class="fw-bold">
+
+                        Better Decisions
+
+                    </h5>
+
+                    <p>
+
+                        AI-generated insights help organizers
+                        monitor performance and identify trends
+                        in real time.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="platform-card">
+
+                    <div class="platform-icon">
+
+                        <i class="bi bi-shield-lock-fill"></i>
+
+                    </div>
+
+                    <h5 class="fw-bold">
+
+                        Secure Platform
+
+                    </h5>
+
+                    <p>
+
+                        Authentication and role-based access
+                        ensure secure management of
+                        event information.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="platform-card">
+
+                    <div class="platform-icon">
+
+                        <i class="bi bi-arrow-repeat"></i>
+
+                    </div>
+
+                    <h5 class="fw-bold">
+
+                        Scalable Design
+
+                    </h5>
+
+                    <p>
+
+                        Modular architecture allows the
+                        platform to support events of
+                        different sizes.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         TECHNOLOGY STACK
+    ========================================== -->
+
+    <section class="mt-5">
+
+        <div class="text-center">
+
+            <h2 class="section-title">
+
+                Technology Stack
+
+            </h2>
+
+            <p class="section-subtitle">
+
+                EventOps AI is developed using modern technologies that
+                provide reliability, maintainability and scalability.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-6">
+
+                <div class="platform-card">
+
+                    <h4 class="mb-4">
+
+                        <i class="bi bi-code-slash text-primary me-2"></i>
+
+                        Backend
+
+                    </h4>
+
+                    <div class="d-flex flex-wrap gap-3">
+
+                        <span class="badge bg-primary fs-6 p-3">
+
+                            Python
+
+                        </span>
+
+                        <span class="badge bg-success fs-6 p-3">
+
+                            Flask
+
+                        </span>
+
+                        <span class="badge bg-dark fs-6 p-3">
+
+                            SQLAlchemy
+
+                        </span>
+
+                        <span class="badge bg-secondary fs-6 p-3">
+
+                            SQLite
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="platform-card">
+
+                    <h4 class="mb-4">
+
+                        <i class="bi bi-window text-primary me-2"></i>
+
+                        Frontend
+
+                    </h4>
+
+                    <div class="d-flex flex-wrap gap-3">
+
+                        <span class="badge bg-danger fs-6 p-3">
+
+                            HTML5
+
+                        </span>
+
+                        <span class="badge bg-primary fs-6 p-3">
+
+                            CSS3
+
+                        </span>
+
+                        <span class="badge bg-warning text-dark fs-6 p-3">
+
+                            JavaScript
+
+                        </span>
+
+                        <span class="badge fs-6 p-3"
+                              style="background:#7952b3; color:white;">
+
+                            Bootstrap 5
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         PROJECT HIGHLIGHTS
+    ========================================== -->
+
+    <section class="mt-5">
+
+        <div class="platform-card">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-7">
+
+                    <h2 class="fw-bold mb-4">
+
+                        Project Highlights
+
+                    </h2>
+
+                    <ul class="list-group list-group-flush">
+
+                        <li class="list-group-item">
+
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+
+                            Multi-Agent AI based Event Management
+
+                        </li>
+
+                        <li class="list-group-item">
+
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+
+                            Secure Authentication System
+
+                        </li>
+
+                        <li class="list-group-item">
+
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+
+                            Real-Time Dashboard
+
+                        </li>
+
+                        <li class="list-group-item">
+
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+
+                            Dynamic Database Statistics
+
+                        </li>
+
+                        <li class="list-group-item">
+
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+
+                            Responsive Bootstrap Interface
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-5 text-center">
+
+                    <i class="bi bi-diagram-3-fill"
+                       style="font-size:9rem; color:#0d6efd;"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!-- ==========================================
+         PROJECT VISION
+    ========================================== -->
+
+    <section class="mt-5">
+
+        <div class="platform-card">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-8">
+
+                    <span class="badge bg-primary mb-3 fs-6">
+
+                        Our Vision
+
+                    </span>
+
+                    <h2 class="fw-bold mb-4">
+
+                        Building the Future of Intelligent Event Management
+
+                    </h2>
+
+                    <p class="text-muted">
+
+                        EventOps AI was created to demonstrate how Artificial
+                        Intelligence can transform event management through
+                        collaboration between specialized AI agents.
+                        Instead of relying on manual coordination,
+                        the platform enables intelligent automation,
+                        real-time monitoring and data-driven decision making.
+
+                    </p>
+
+                    <p class="text-muted">
+
+                        As the platform evolves, future enhancements may include
+                        predictive analytics, AI chat assistants, automated scheduling,
+                        cloud deployment and advanced reporting capabilities,
+                        making EventOps AI an even more powerful solution for
+                        modern event operations.
+
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4 text-center">
+
+                    <i class="bi bi-lightbulb-fill"
+                       style="font-size:8rem;color:#ffc107;"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         DEVELOPER
+    ========================================== -->
+
+    <section class="mt-5">
+
+        <div class="text-center">
+
+            <h2 class="section-title">
+
+                Meet the Developer
+
+            </h2>
+
+            <p class="section-subtitle">
+
+                Designed and developed as an AI-powered event
+                management platform using modern web technologies.
+
+            </p>
+
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="platform-card">
+
+                    <div class="row align-items-center">
+
+                        <div class="col-md-3 text-center">
+
+                            <div class="rounded-circle bg-primary
+                                        text-white
+                                        d-flex
+                                        justify-content-center
+                                        align-items-center
+                                        mx-auto"
+
+                                 style="width:120px;height:120px;">
+
+                                <i class="bi bi-person-fill"
+                                   style="font-size:3rem;"></i>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-9">
+
+                            <h3 class="fw-bold">
+
+                                Divya Sri Yada
+
+                            </h3>
+
+
+
+                            <p class="text-muted">
+
+                                Passionate about Artificial Intelligence,
+                                Full Stack Development and intelligent automation.
+                                EventOps AI showcases how multiple AI agents
+                                can collaborate to simplify event operations
+                                while delivering real-time insights.
+
+                            </p>
+
+                            <div class="mt-3">
+
+                                <span class="badge bg-primary me-2">
+                                    Flask
+                                </span>
+
+                                <span class="badge bg-success me-2">
+                                    Python
+                                </span>
+
+                                <span class="badge bg-danger me-2">
+                                    SQLAlchemy
+                                </span>
+
+                                <span class="badge"
+                                      style="background:#7952b3;">
+
+                                    Bootstrap
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         CONTACT CTA
+    ========================================== -->
+
+    <section class="mt-5 mb-5">
+
+        <div class="platform-card text-center">
+
+            <i class="bi bi-chat-square-dots-fill
+                      text-primary"
+               style="font-size:4rem;"></i>
+
+            <h2 class="fw-bold mt-4">
+
+                Let's Build Smarter Events Together
+
+            </h2>
+
+            <p class="text-muted mt-3">
+
+                Whether you have questions, suggestions or feedback,
+                we'd love to hear from you.
+
+            </p>
+
+            <div class="mt-4">
+
+                <a href="{{ url_for('contact') }}"
+                   class="btn btn-primary btn-lg me-3">
+
+                    <i class="bi bi-envelope-fill me-2"></i>
+
+                    Contact Us
+
+                </a>
+
+                <a href="{{ url_for('index') }}"
+                   class="btn btn-outline-primary btn-lg">
+
+                    <i class="bi bi-house-fill me-2"></i>
+
+                    Back to Home
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+{% endblock %}

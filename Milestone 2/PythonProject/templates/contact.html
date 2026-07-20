@@ -1,0 +1,811 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us — EventOps AI{% endblock %}
+
+{% block extra_css %}
+<style>
+
+    body{
+        background:#f8f9fc;
+    }
+
+    /* ================= HERO ================= */
+
+    .contact-hero{
+        background:linear-gradient(135deg,#0d6efd 0%,#6610f2 55%,#d63384 100%);
+        color:white;
+        padding:80px 40px;
+        border-radius:25px;
+        position:relative;
+        overflow:hidden;
+        margin-bottom:60px;
+    }
+
+    .contact-hero::before{
+        content:'';
+        position:absolute;
+        width:220%;
+        height:220%;
+        top:-60%;
+        left:-60%;
+        background:radial-gradient(circle,rgba(255,255,255,.10),transparent 70%);
+        animation:rotate 18s linear infinite;
+        pointer-events:none;
+    }
+
+    @keyframes rotate{
+        from{transform:rotate(0deg);}
+        to{transform:rotate(360deg);}
+    }
+
+    .contact-hero .content{
+        position:relative;
+        z-index:2;
+    }
+
+    .contact-hero h1{
+        font-weight:700;
+    }
+
+    .contact-hero p{
+        font-size:1.2rem;
+        opacity:.95;
+    }
+
+    /* ================= CARDS ================= */
+
+    .glass-card{
+
+        background:rgba(255,255,255,.75);
+
+        backdrop-filter:blur(8px);
+
+        border:none;
+
+        border-radius:25px;
+
+        box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+        transition:.35s;
+    }
+
+    .glass-card:hover{
+
+        transform:translateY(-6px);
+
+        box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+    }
+
+    /* ================= CONTACT INFO ================= */
+
+    .contact-item{
+
+        display:flex;
+
+        align-items:flex-start;
+
+        margin-bottom:30px;
+
+    }
+
+    .contact-icon{
+
+        width:60px;
+
+        height:60px;
+
+        border-radius:50%;
+
+        background:linear-gradient(135deg,#0d6efd,#6610f2);
+
+        color:white;
+
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
+
+        font-size:1.4rem;
+
+        margin-right:20px;
+
+        flex-shrink:0;
+
+    }
+
+    .contact-title{
+
+        font-weight:600;
+
+        margin-bottom:3px;
+
+    }
+
+    .social-icons a{
+
+        width:45px;
+
+        height:45px;
+
+        display:inline-flex;
+
+        justify-content:center;
+
+        align-items:center;
+
+        border-radius:50%;
+
+        background:white;
+
+        color:#0d6efd;
+
+        margin-right:10px;
+
+        font-size:1.2rem;
+
+        transition:.3s;
+
+        text-decoration:none;
+
+        box-shadow:0 4px 10px rgba(0,0,0,.08);
+
+    }
+
+    .social-icons a:hover{
+
+        background:#0d6efd;
+
+        color:white;
+
+        transform:translateY(-4px);
+
+    }
+
+    /* ================= FORM ================= */
+
+    .form-control,
+    .form-select{
+
+        border-radius:15px;
+
+        padding:16px;
+
+    }
+
+    .form-floating>label{
+
+        padding:1rem;
+
+    }
+
+    textarea{
+
+        resize:none;
+
+    }
+
+    .btn-send{
+
+        background:linear-gradient(135deg,#0d6efd,#6610f2);
+
+        color:white;
+
+        border:none;
+
+        border-radius:50px;
+
+        padding:14px 45px;
+
+        font-size:1.1rem;
+
+        transition:.35s;
+
+        box-shadow:0 10px 20px rgba(13,110,253,.25);
+
+    }
+
+    .btn-send:hover{
+
+        transform:translateY(-4px);
+
+        color:white;
+
+        box-shadow:0 15px 35px rgba(13,110,253,.35);
+
+    }
+
+</style>
+{% endblock %}
+
+{% block content %}
+
+<div class="container py-4">
+
+<div class="contact-hero">
+
+<div class="content">
+
+<div class="row align-items-center">
+
+<div class="col-lg-8">
+
+<h1 class="display-4">
+
+<i class="bi bi-envelope-paper-heart me-2"></i>
+
+Contact EventOps AI
+
+</h1>
+
+<p class="lead mt-3">
+
+Questions about our AI-powered event management platform?
+
+Need technical support?
+
+Our team is always ready to help.
+
+</p>
+
+<a href="#contactForm" class="btn btn-light btn-lg mt-3">
+
+<i class="bi bi-chat-dots-fill"></i>
+
+Contact Support
+
+</a>
+
+</div>
+
+<div class="col-lg-4 text-center">
+
+<i class="bi bi-headset display-1"></i>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="row g-4">
+
+<!-- LEFT CARD -->
+
+<div class="col-lg-4">
+
+<div class="glass-card p-4 h-100">
+
+<h3 class="fw-bold mb-4">
+
+<i class="bi bi-info-circle-fill text-primary"></i>
+
+Contact Information
+
+</h3>
+
+<div class="contact-item">
+
+<div class="contact-icon">
+
+<i class="bi bi-geo-alt-fill"></i>
+
+</div>
+
+<div>
+
+<div class="contact-title">
+
+Office Address
+
+</div>
+
+Hyderabad,
+
+Telangana,
+
+India
+
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<div class="contact-icon">
+
+<i class="bi bi-envelope-fill"></i>
+
+</div>
+
+<div>
+
+<div class="contact-title">
+
+Email
+
+</div>
+
+support@eventopsai.com
+
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<div class="contact-icon">
+
+<i class="bi bi-telephone-fill"></i>
+
+</div>
+
+<div>
+
+<div class="contact-title">
+
+Phone
+
+</div>
+
++91 98765 43210
+
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<div class="contact-icon">
+
+<i class="bi bi-clock-fill"></i>
+
+</div>
+
+<div>
+
+<div class="contact-title">
+
+Working Hours
+
+</div>
+
+Monday – Friday
+
+<br>
+
+9:00 AM – 6:00 PM
+
+</div>
+
+</div>
+
+<hr>
+
+<h5 class="mb-3">
+
+Follow Us
+
+</h5>
+
+<div class="social-icons">
+
+<a href="#"><i class="bi bi-facebook"></i></a>
+
+<a href="#"><i class="bi bi-twitter-x"></i></a>
+
+<a href="#"><i class="bi bi-linkedin"></i></a>
+
+<a href="#"><i class="bi bi-github"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT CARD -->
+
+<div class="col-lg-8">
+
+<div class="glass-card p-4" id="contactForm">
+
+<h3 class="fw-bold mb-4">
+
+<i class="bi bi-send-fill text-primary"></i>
+
+Send us a Message
+
+</h3>
+
+<form method="POST">
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+
+<div class="form-floating">
+
+<input
+
+type="text"
+
+class="form-control"
+
+id="name"
+
+name="name"
+
+placeholder="Name"
+
+required>
+
+<label>Full Name</label>
+
+</div>
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<div class="form-floating">
+
+<input
+
+type="email"
+
+class="form-control"
+
+id="email"
+
+name="email"
+
+placeholder="Email"
+
+required>
+
+<label>Email Address</label>
+
+</div>
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<div class="form-floating">
+
+<input
+
+type="text"
+
+class="form-control"
+
+id="subject"
+
+name="subject"
+
+placeholder="Subject"
+
+required>
+
+<label>Subject</label>
+
+</div>
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<div class="form-floating">
+
+<select class="form-select">
+
+<option>General Inquiry</option>
+
+<option>Technical Support</option>
+
+<option>Bug Report</option>
+
+<option>Partnership</option>
+
+<option>Registration Help</option>
+
+</select>
+
+<label>Category</label>
+
+</div>
+
+</div>
+
+<div class="col-12">
+
+<div class="form-floating">
+
+<textarea
+
+class="form-control"
+
+placeholder="Message"
+
+style="height:180px"
+
+required></textarea>
+
+<label>Your Message</label>
+
+</div>
+
+</div>
+
+<div class="mt-4">
+
+<button class="btn btn-send">
+
+<i class="bi bi-send-fill me-2"></i>
+
+Send Message
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+    <!-- ================= FAQ SECTION ================= -->
+
+<div class="mt-5">
+
+    <div class="text-center mb-4">
+
+        <h2 class="fw-bold">
+            <i class="bi bi-question-circle-fill text-primary"></i>
+            Frequently Asked Questions
+        </h2>
+
+        <p class="text-muted">
+            Find answers to the questions we receive most often.
+        </p>
+
+    </div>
+
+    <div class="accordion shadow-sm" id="faqAccordion">
+
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+                <button class="accordion-button" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq1">
+
+                    How do I register for an event?
+
+                </button>
+
+            </h2>
+
+            <div id="faq1"
+                 class="accordion-collapse collapse show"
+                 data-bs-parent="#faqAccordion">
+
+                <div class="accordion-body">
+
+                    Create your account, browse available events,
+                    and click <strong>Register</strong> on any event.
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+                <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq2">
+
+                    Can I become a speaker?
+
+                </button>
+
+            </h2>
+
+            <div id="faq2"
+                 class="accordion-collapse collapse"
+                 data-bs-parent="#faqAccordion">
+
+                <div class="accordion-body">
+
+                    Yes. Contact our team with your profile
+                    and speaking experience.
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+                <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq3">
+
+                    I forgot my password.
+
+                </button>
+
+            </h2>
+
+            <div id="faq3"
+                 class="accordion-collapse collapse"
+                 data-bs-parent="#faqAccordion">
+
+                <div class="accordion-body">
+
+                    Click the "Forgot Password" link on the login
+                    page to reset your password.
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+                <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq4">
+
+                    How quickly will I receive a reply?
+
+                </button>
+
+            </h2>
+
+            <div id="faq4"
+                 class="accordion-collapse collapse"
+                 data-bs-parent="#faqAccordion">
+
+                <div class="accordion-body">
+
+                    Our support team usually responds within
+                    <strong>24 business hours.</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= MAP ================= -->
+
+<div class="mt-5">
+
+    <div class="glass-card p-3">
+
+        <h3 class="fw-bold mb-3">
+
+            <i class="bi bi-geo-alt-fill text-danger"></i>
+
+            Our Location
+
+        </h3>
+
+        <div class="ratio ratio-21x9 rounded overflow-hidden">
+
+            <iframe
+
+                src="https://maps.google.com/maps?q=Hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
+
+                loading="lazy"
+
+                allowfullscreen>
+
+            </iframe>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= SUCCESS MESSAGE ================= -->
+
+<div class="modal fade"
+     id="successModal"
+     tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content rounded-4">
+
+            <div class="modal-body text-center p-5">
+
+                <div class="display-1 text-success mb-3">
+
+                    <i class="bi bi-check-circle-fill"></i>
+
+                </div>
+
+                <h3>
+
+                    Message Sent!
+
+                </h3>
+
+                <p class="text-muted">
+
+                    Thank you for contacting EventOps AI.
+
+                    Our team will respond shortly.
+
+                </p>
+
+                <button
+                        class="btn btn-primary"
+                        data-bs-dismiss="modal">
+
+                    Close
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+
+<script>
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function(e){
+
+    if(!form.checkValidity()){
+
+        e.preventDefault();
+
+        e.stopPropagation();
+
+    }
+
+    form.classList.add("was-validated");
+
+});
+
+</script>
+
+{% endblock %}
